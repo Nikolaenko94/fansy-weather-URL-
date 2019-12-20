@@ -53,11 +53,11 @@
         itemRadio[1].style.color = '#ff4d4d';
         itemRadio[2].style.backgroundColor = '#d7dadc';
         itemRadio[2].style.color = '#FFFFFF';
-        divNumberAdd.innerHTML = Math.round(currentDataTemp);
-        overcast1.innerHTML = `FEELS LIKE: ${Math.round(currentDataFeelsLike)}`;
-        document.querySelector('.tuesdayBlockTwo').innerHTML = `${Math.round(currentDataTemp - 4)}`;
-        document.querySelector('.wednesdayBlockTwo').innerHTML = `${Math.round(currentTempTwoDay - 2)}`;
-        document.querySelector('.thursdayBlockTwo').innerHTML = `${Math.round(currentTempThirdDay - 7)}`;
+        divNumberAdd.innerHTML = Math.round(currentDataTemp - 237);
+       overcast1.innerHTML = `FEELS LIKE: ${Math.round(currentDataFeelsLike -237)}`;
+        document.querySelector('.tuesdayBlockTwo').innerHTML = `${Math.round(currentDataTemp - 233)}`;
+        document.querySelector('.wednesdayBlockTwo').innerHTML = `${Math.round(currentTempTwoDay - 235)}`;
+        document.querySelector('.thursdayBlockTwo').innerHTML = `${Math.round(currentTempThirdDay - 230)}`;
     });
 
 
