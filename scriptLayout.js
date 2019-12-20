@@ -249,7 +249,7 @@
     const openWeatherApiKey = 'f6d2448ffd79ab7feb43fabf5a76fb17';
 
     const fetchWeatherDataByGeoCoordinates = (lat, lon, weatherType = 'forecast') => {
-        return fetch(`http://api.openweathermap.org/data/2.5/${weatherType}?lat=${lat}&lon=${lon}&APPID=${openWeatherApiKey}`, {
+        return fetch(`https://api.openweathermap.org/data/2.5/${weatherType}?lat=${lat}&lon=${lon}&APPID=${openWeatherApiKey}`, {
             method: 'GET',
             mode: 'cors'
         }).then(
