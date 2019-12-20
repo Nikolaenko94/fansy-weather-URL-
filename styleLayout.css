@@ -1,0 +1,262 @@
+body {
+    height: 100vh;
+    position: relative;
+    padding: 1.5% 6.8% 0% 6.8%;
+    margin: 0;
+    background-size: cover;
+    background-color: rgba(174, 181, 185, 0.5);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectionMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 47px;
+}
+
+button,
+select {
+    height: 44px;
+    background: rgba(174, 181, 185, 0.5);
+    color: white;
+    size: 14px;
+    font-weight: bold;
+}
+
+.button0 {
+    background: rgba(174, 181, 185, 0.5);
+    width: 44px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.button1 {
+    background: rgba(174, 181, 185, 0.5);
+    border-radius: 5px 0px 0px 5px;
+    width: 44px;
+}
+
+.button2 {
+    background: rgba(174, 181, 185, 0.5);
+    border-radius: 0px 5px 5px 0px;
+    margin-right: 10px;
+    width: 44px;
+}
+
+.tagSelect {
+    width: 71px;
+    border-radius: 5px;
+}
+
+.input {
+    width: 274px;
+    height: 37px;
+    border-radius: 5px 0px 0px 5px;
+    color: red;
+}
+
+.geocoder {
+    display: flex;
+}
+
+.inputEnter {
+    width: 80%;
+    height: 40px;
+    border-radius: 5px 0px 0px 5px;
+    background: rgba(76, 82, 85, 0.4);
+    border: 1px solid rgba(228, 227, 227, 0.2);
+    color: white;
+    text-align: center;
+}
+
+::placeholder {
+    color: white;
+}
+
+.go {
+    width: 101px;
+    height: 44px;
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+    background: rgba(174, 181, 185, 0.5);
+    border: 1px solid rgba(228, 227, 227, 0.2);
+}
+
+.divDateCity {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.divDateToday {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#overcast0,
+#overcast1,
+#overcast2,
+#overcast3 {
+    font-size: 25px;
+}
+
+.divNumberCommon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.divNumber {
+    font-size: 240px;
+    padding: 0;
+}
+
+.divWeather p {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.divDaysBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+#TUESDAY,
+#WEDNESDAY,
+#THURSDAY {
+    display: grid;
+    grid-template-areas: "one one" "two third";
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.One {
+    grid-area: one;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.Two {
+    grid-area: two;
+    font-size: 50px;
+}
+
+.Third {
+    grid-area: third;
+}
+
+p {
+    margin: 0;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.divMap {
+    height: 350px;
+    width: 350px;
+    border-radius: 25px;
+}
+
+.mapboxgl-ctrl-geocoder {
+    min-width: 100%;
+}
+
+@media screen and (max-width: 1038px) {
+    #overcast0,
+    #overcast1,
+    #overcast2,
+    #overcast3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    #overcast1,
+    #overcast3 {
+        font-size: 15px;
+    }
+    .divDateToday {
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .sectionMain {
+        display: flex;
+        flex-direction: column;
+        margin-top: 67px;
+    }
+    .sectionOne {
+        margin-bottom: 10px;
+    }
+    .overcast0,
+    .overcast1,
+    .overcast2,
+    .overcast3 {
+        font-size: 15px;
+    }
+    .divNumber {
+        font-size: 200px;
+        margin: 0;
+        padding: 0;
+    }
+    .divWeather p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .divNavigation {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+    .sectionMain {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .sectionOne {
+        width: 100vw;
+        margin-bottom: 10px;
+    }
+    .overcast0,
+    .overcast1,
+    .overcast2,
+    .overcast3 {
+        font-size: 15px;
+    }
+    .divNumber {
+        font-size: 80px;
+        margin: 0;
+        padding: 0;
+    }
+    #TUESDAY,
+    #WEDNESDAY,
+    #THURSDAY {
+        display: flex;
+        flex-direction: column;
+    }
+    p {
+        margin: 0;
+        font-size: 70px;
+        font-weight: 900;
+    }
+    .divMap {
+        width: 100vw;
+        border-radius: 25px;
+    }
+}
